@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Drive App US</title>
+  <link rel="icon" href="assets/images/cropped-Logo-150x150.png" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/images/cropped-Logo-150x150.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+  <div class="page-reveal" aria-hidden="true"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="logo" href="#top" aria-label="Drive">
+        <img src="../assets/images/Drive_Blanco.png" alt="Drive" class="logo-img" />
+      </a>
+
+      <div class="nav-links">
+        <a href="#benefits">Benefits</a>
+        <a href="#how">How it works</a>
+        <a class="btn btn-primary" href="#descargar">Get the app</a>
+      </div>
+
+      <!-- SOCIAL (desktop) -->
+      <div class="nav-social" aria-label="Social media">
+        <a class="social-link" href="https://www.linkedin.com/company/driveappmx" target="_blank"
+          rel="noopener noreferrer" aria-label="Drive on LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5ZM.5 23.5h4V7.98h-4V23.5ZM8.5 7.98h3.83v2.12h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1v9.36h-4v-8.3c0-1.98-.04-4.53-2.76-4.53-2.76 0-3.18 2.16-3.18 4.39v8.44h-4V7.98Z" />
+          </svg>
+        </a>
+
+        <a class="social-link" href="https://www.instagram.com/drive_app_usa/" target="_blank" rel="noopener noreferrer"
+          aria-label="Drive on Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm9 2h-9A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4Zm-4.5 3.2A4.8 4.8 0 1 1 7.2 12 4.8 4.8 0 0 1 12 7.2Zm0 2A2.8 2.8 0 1 0 14.8 12 2.8 2.8 0 0 0 12 9.2ZM17.6 6.4a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z" />
+          </svg>
+        </a>
+
+        <a class="social-link" href="https://www.facebook.com/driveappusa" target="_blank" rel="noopener noreferrer"
+          aria-label="Drive on Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M13.5 22v-8h2.7l.4-3H13.5V9.1c0-.87.24-1.46 1.5-1.46h1.7V5.02c-.3-.04-1.32-.12-2.5-.12-2.48 0-4.2 1.52-4.2 4.32V11H7.4v3H10v8h3.5Z" />
+          </svg>
+        </a>
+      </div>
+
+      <button class="nav-toggle nav-toggle--pill" type="button" aria-label="Open menu" aria-controls="mobileMenu"
+        aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <div class="mobile-menu__backdrop" data-close="true"></div>
+
+      <div class="mobile-menu__panel" role="dialog" aria-modal="true" aria-label="Menu">
+        <div class="mobile-menu__top">
+          <span class="mobile-menu__title">Menu</span>
+          <button class="mobile-menu__close" type="button" aria-label="Close menu" data-close="true">✕</button>
+        </div>
+
+        <div class="mobile-menu__links">
+          <a href="#benefits" data-close="true">Benefits</a>
+          <a href="#how" data-close="true">How it works</a>
+          <a href="#estacionamientos" data-close="true">List my parking location</a>
+          <a class="btn btn-primary btn-menu" href="#descargar" data-close="true">Get the app</a>
+
+          <!-- SOCIAL (mobile) -->
+          <div class="mobile-social" aria-label="Social media">
+            <a class="social-pill" href="https://www.linkedin.com/company/driveappmx" target="_blank"
+              rel="noopener noreferrer" aria-label="Drive on LinkedIn">
+              <span class="social-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5ZM.5 23.5h4V7.98h-4V23.5ZM8.5 7.98h3.83v2.12h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1v9.36h-4v-8.3c0-1.98-.04-4.53-2.76-4.53-2.76 0-3.18 2.16-3.18 4.39v8.44h-4V7.98Z" />
+                </svg>
+              </span>
+              LinkedIn
+            </a>
+
+            <a class="social-pill" href="https://www.instagram.com/driveapp.mx/" target="_blank"
+              rel="noopener noreferrer" aria-label="Drive on Instagram">
+              <span class="social-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm9 2h-9A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4Zm-4.5 3.2A4.8 4.8 0 1 1 7.2 12 4.8 4.8 0 0 1 12 7.2Zm0 2A2.8 2.8 0 1 0 14.8 12 2.8 2.8 0 0 0 12 9.2ZM17.6 6.4a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z" />
+                </svg>
+              </span>
+              Instagram
+            </a>
+
+            <a class="social-pill" href="https://www.facebook.com/DriveAppMx" target="_blank" rel="noopener noreferrer"
+              aria-label="Drive on Facebook">
+              <span class="social-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M13.5 22v-8h2.7l.4-3H13.5V9.1c0-.87.24-1.46 1.5-1.46h1.7V5.02c-.3-.04-1.32-.12-2.5-.12-2.48 0-4.2 1.52-4.2 4.32V11H7.4v3H10v8h3.5Z" />
+                </svg>
+              </span>
+              Facebook
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero hero-xl container">
+      <div class="hero-left">
+        <h1>Pay for parking<br />right from your phone.</h1>
+        <p class="sub">Fast. No lines. No cash.</p>
+
+        <div class="store-row" id="descargar">
+          <a class="store-badge" href="https://apps.apple.com/us/app/drive-mx/id1139084651?l=es-MX" target="_blank"
+            rel="noopener noreferrer" aria-label="Download on the App Store">
+            <img src="assets/buttonStore/svgs/appstore-en.svg" alt="Download on the App Store"
+              class="store-img store-img-apple" loading="lazy" />
+          </a>
+
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=mx.drivepp.drive" target="_blank"
+            rel="noopener noreferrer" aria-label="Get it on Google Play">
+            <img src="assets/buttonStore/images/googleplay-en.png" alt="Get it on Google Play"
+              class="store-img store-img-google" loading="lazy" />
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="mock hero-scene">
+          <img class="hero-car" src="assets/images/hero_car.png" alt="" aria-hidden="true" />
+          <img class="hero-phone" src="assets/images/escanea.png" alt="Drive on a phone" />
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST -->
+    <section class="trust container">
+      <h2>Trusted by <span class="accent">500,000+</span> drivers.</h2>
+    </section>
+
+    <!-- BENEFITS -->
+    <section id="benefits" class="splits container" aria-label="Drive benefits">
+      <!-- 1 -->
+      <section class="split">
+        <div class="split__copy">
+          <h2 class="split__title">NO-LINE<br />ZONE</h2>
+          <p class="split__text">
+            Pay from your phone and skip the wait.
+          </p>
+
+          <ul class="split__list">
+            <li>Scan your ticket</li>
+            <li>Pay in seconds</li>
+            <li>Head straight to the exit</li>
+          </ul>
+        </div>
+
+        <div class="split__media" aria-hidden="true">
+          <div class="split__circle">
+            <img src="assets/images/Personas(1).png" alt="" loading="lazy" />
+          </div>
+          <span class="split__spark split__spark--a"></span>
+          <span class="split__spark split__spark--b"></span>
+        </div>
+      </section>
+
+      <!-- 2 -->
+      <section class="split split--reverse">
+        <div class="split__copy">
+          <h2 class="split__title">YOUR TIME & SECURITY<br />COME FIRST</h2>
+          <p class="split__text">
+            Save a payment method once — check out in seconds. Simple and secure.
+          </p>
+
+          <ul class="split__list">
+            <li>Less friction</li>
+            <li>More speed</li>
+            <li>A better experience</li>
+          </ul>
+        </div>
+
+        <div class="split__media" aria-hidden="true">
+          <div class="split__circle">
+            <img src="assets/images/image.png" alt="" loading="lazy" />
+          </div>
+          <span class="split__spark split__spark--a"></span>
+          <span class="split__spark split__spark--b"></span>
+        </div>
+      </section>
+
+      <!-- 3 -->
+      <section class="split">
+        <div class="split__copy">
+          <h2 class="split__title">RECEIPTS & INVOICES<br />MADE EASY</h2>
+          <p class="split__text">
+            Download your receipt or invoice anytime from your history.
+          </p>
+
+          <ul class="split__list">
+            <li>Receipts</li>
+            <li>Invoices</li>
+            <li>Access from anywhere</li>
+          </ul>
+        </div>
+
+        <div class="split__media" aria-hidden="true">
+          <div class="split__circle">
+            <img src="assets/images/facturacion.png" alt="" loading="lazy" />
+          </div>
+          <span class="split__spark split__spark--a"></span>
+          <span class="split__spark split__spark--b"></span>
+        </div>
+      </section>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="how container">
+      <h2 class="title">How it works</h2>
+
+      <div class="steps">
+        <!-- 1 -->
+        <article class="step">
+          <div class="step__top">
+            <div class="num">1</div>
+            <h3>Download the app</h3>
+          </div>
+          <p>Install it from the App Store or Google Play, then open it.</p>
+
+          <div class="step__media" aria-hidden="true">
+            <div class="step-mediaBox">
+              <img src="assets/images/qr.png" alt="QR code to download Drive" loading="lazy" />
+            </div>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="step">
+          <div class="step__top">
+            <div class="num">2</div>
+            <h3>Create your account</h3>
+          </div>
+          <p>Sign up in under a minute — you’re ready to go.</p>
+
+          <div class="step__media" aria-hidden="true">
+            <div class="step-mediaBox">
+              <img src="assets/images/registro.png" alt="Sign-up screen" loading="lazy" />
+            </div>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="step">
+          <div class="step__top">
+            <div class="num">3</div>
+            <h3>Scan the ticket</h3>
+          </div>
+          <p>Open the app and scan the parking QR code.</p>
+
+          <div class="step__media" aria-hidden="true">
+            <div class="step-mediaBox">
+              <img src="assets/images/escanea.png" alt="Scan screen" loading="lazy" />
+            </div>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="step">
+          <div class="step__top">
+            <div class="num">4</div>
+            <h3>Pay and go</h3>
+          </div>
+          <p>Pay with your saved method and leave without waiting.</p>
+
+          <div class="step__media" aria-hidden="true">
+            <div class="step-mediaBox">
+              <img src="assets/images/pago.png" alt="Payment screen" loading="lazy" />
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div class="foot-links">
+      <a href="privacy-notice.html">Privacy Notice</a>
+      <a href="terms.html">Terms & Conditions</a>
+    </div>
+
+    <!-- FOOT SOCIAL -->
+    <div class="foot-social" aria-label="Social media">
+      <a class="social-link social-link--foot" href="https://www.linkedin.com/company/driveappmx" target="_blank"
+        rel="noopener noreferrer" aria-label="Drive on LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5ZM.5 23.5h4V7.98h-4V23.5ZM8.5 7.98h3.83v2.12h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1v9.36h-4v-8.3c0-1.98-.04-4.53-2.76-4.53-2.76 0-3.18 2.16-3.18 4.39v8.44h-4V7.98Z" />
+        </svg>
+      </a>
+      <a class="social-link social-link--foot" href="https://www.instagram.com/drive_app_usa/" target="_blank"
+        rel="noopener noreferrer" aria-label="Drive on Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm9 2h-9A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4Zm-4.5 3.2A4.8 4.8 0 1 1 7.2 12 4.8 4.8 0 0 1 12 7.2Zm0 2A2.8 2.8 0 1 0 14.8 12 2.8 2.8 0 0 0 12 9.2ZM17.6 6.4a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z" />
+        </svg>
+      </a>
+      <a class="social-link social-link--foot" href="https://www.facebook.com/driveappusa" target="_blank"
+        rel="noopener noreferrer" aria-label="Drive on Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M13.5 22v-8h2.7l.4-3H13.5V9.1c0-.87.24-1.46 1.5-1.46h1.7V5.02c-.3-.04-1.32-.12-2.5-.12-2.48 0-4.2 1.52-4.2 4.32V11H7.4v3H10v8h3.5Z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="foot-stores">
+      <a class="store-badge store-badge--sm" href="https://apps.apple.com/us/app/drive-mx/id1139084651?l=es-MX"
+        target="_blank" rel="noopener noreferrer" aria-label="App Store">
+        <img src="assets/buttonStore/svgs/appstore-en.svg" alt="App Store" class="store-img store-img-apple"
+          loading="lazy" />
+      </a>
+
+      <a class="store-badge store-badge--sm" href="https://play.google.com/store/apps/details?id=mx.drivepp.drive"
+        target="_blank" rel="noopener noreferrer" aria-label="Google Play">
+        <img src="assets/buttonStore/images/googleplay-en.png" alt="Google Play" class="store-img store-img-google"
+          loading="lazy" />
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => document.body.classList.add('is-ready'), 250);
+
+      const toggle = document.querySelector('.nav-toggle');
+      const menu = document.querySelector('.mobile-menu');
+      if (!toggle || !menu) return;
+
+      const openMenu = () => {
+        document.body.classList.add('menu-open');
+        toggle.setAttribute('aria-expanded', 'true');
+        menu.setAttribute('aria-hidden', 'false');
+      };
+
+      const closeMenu = () => {
+        document.body.classList.remove('menu-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        menu.setAttribute('aria-hidden', 'true');
+      };
+
+      toggle.addEventListener('click', () => {
+        document.body.classList.contains('menu-open') ? closeMenu() : openMenu();
+      });
+
+      menu.addEventListener('click', (e) => {
+        if (e.target && e.target.dataset && e.target.dataset.close === 'true') closeMenu();
+      });
+
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeMenu();
+      });
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 940) closeMenu();
+      });
+    });
+  </script>
+</body>
+
+</html>
